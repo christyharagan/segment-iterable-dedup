@@ -15,6 +15,24 @@ This approach works both ways:
 
 # Usage
 
+ As of the latest version of Segment Sloth, installing this project is super simple: you can use the Sloth Package Manager. First step is to define your workspace settings. From the command line:
+
+ ```
+ spm setup --access_token=ACCESS_TOKEN --work_slug=WORK_SLUG --work_id=WORK_ID
+ ```
+
+ This step only needs to be done once irregardless of what function you install, so if you've already done this step for another function, you can skip it.
+
+ Once setup, you can then install this function by running
+
+ ```
+spm install christyharagan/segment-iterable-dedup
+ ```
+
+# Customisation
+
+If you want to edit the function for your own needs, follow these instructions:
+
  * Clone and locally check-out, or download this project
  * This project by default has a GitHub action which auto-deploys the function when you commit this to your GitHub repo. If you don't want this functionality, delete the .github folder
  * Edit the sloth.yaml file and replace the values specified. For the access_token, you have three choices
@@ -26,7 +44,5 @@ This approach works both ways:
    * If you're using the GitHub action, simply push your repo to GitHub repo and you're good to go
 
 In case you're not sure, you can find both your work_slug (Slug) and work_id (ID) by going into the Settings->General Settings of your workspace.
-
-# Customisation
 
 If you want to customise the function to suit your needs, follow the manual at (Segment Sloth)[https://github.com/christyharagan/segment-sloth]. This function is written in TypeScript.

@@ -5,7 +5,7 @@ export async function onIdentify(event: SegmentIdentifyEvent, settings: Function
       userId: event.userId,
       anonymousId: email,
       type: 'identify',
-      writeKey: settings['Write Key']
+      writeKey: settings.writeKey
     }
     const res = await fetch('https://api.segment.io/v1/identify', {
       body: JSON.stringify(payload),

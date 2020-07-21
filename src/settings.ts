@@ -1,7 +1,7 @@
 const OptionalSettings = {
 }
 const RequiredSettings = {
-  'Write Key': {
+  writeKey: {
     description: 'The write key of a source to fire the deduping identify events back into',
     type: string
   }
